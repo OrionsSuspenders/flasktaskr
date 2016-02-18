@@ -7,6 +7,7 @@
   <table>
     <tr>
       <form action="{{ url_for('new_task') }}" method="post">
+        {{ form.csrf_token }}
         <td>
           <label>Task Name:</label>
           <input name="name" type="text">
@@ -28,6 +29,7 @@
             <option value="8">8</option>
             <option value="9">9</option>
             <option value="10">10</option>
+            <option value="11">but it goes to 11</option>
           </select>
         </td>
         <td>
